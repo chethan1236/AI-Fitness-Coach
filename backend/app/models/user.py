@@ -39,6 +39,9 @@ class User(Base):
     workout_plans: Mapped[list["WorkoutPlan"]] = relationship(
         back_populates="user", cascade="all, delete-orphan", passive_deletes=True
     )
+    diet_plans: Mapped[list["DietPlan"]] = relationship(
+        back_populates="user", cascade="all, delete-orphan", passive_deletes=True
+    )
 
 
 class RefreshToken(Base):
