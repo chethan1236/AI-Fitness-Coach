@@ -1,0 +1,31 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+!.env.local.example
+
+# Dependencies and builds
+node_modules/
+.next/
+out/
+dist/
+coverage/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Runtime data
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Tooling and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

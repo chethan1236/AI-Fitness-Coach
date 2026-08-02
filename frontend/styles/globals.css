@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root { --background: 248 250 252; --foreground: 15 23 42; --card: 255 255 255; --muted: 100 116 139; }
+  .dark { --background: 10 18 32; --foreground: 226 232 240; --card: 15 23 42; --muted: 148 163 184; }
+  * { @apply border-slate-200 dark:border-slate-800; }
+  body { @apply min-h-screen bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100; }
+}
+
+@layer components {
+  .panel { @apply rounded-2xl border bg-white shadow-sm dark:bg-slate-900; }
+  .gradient-text { @apply bg-gradient-to-r from-emerald-500 to-sky-500 bg-clip-text text-transparent; }
+}
